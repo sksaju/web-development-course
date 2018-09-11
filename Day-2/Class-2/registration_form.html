@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Registration form</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width-device-width" initial-scale="1"/>
+	</head>
+	
+	<style>
+		body {
+			font-size:14px;
+			font-family: "Arial";
+		}
+		.text-center {
+			text-align: center;`
+		}
+		.box {
+			width: 600px;
+			margin: 20px auto;
+			padding: 20px;
+			border: 3px solid green;
+			background: #eeeeee;
+		}
+		.green {
+			color: green;
+		}
+		#red {
+			color: red;
+		}
+		p {
+			color: black;
+		}
+		.form-group {
+			width: 100%;
+			overflow: auto;
+			margin-bottom:10px;
+		}
+		.form-label {
+			width: 30%;
+			float: left;
+			font-weight: 500;
+			/*border: 1px solid green;*
+		}
+		.form-input {
+			width: 70%;
+			float: right;
+			/*border: 1px solid yellow;*/
+		}
+		
+		a {
+			text-decoration: none;;
+			color: blue;
+		}
+		a:hover {
+			text-decoration: underline;;
+			color: green;
+		}
+		
+	</style>
+	
+	<body>
+		<h1 class="green text-center">Registration Form</h1>
+		<div class="box">
+			<form>
+				<div class="form-group">
+					<div class="form-label">Student name</div>
+					<div class="form-input"><strong>:</strong> <input type="text" name="student_name" id="student_name"></div>
+				</div>
+				<div class="form-group">
+					<div class="form-label">Student email</div>
+					<div class="form-input"><strong>:</strong> <input type="email" name="student_email" id="student_email" placeholder="e.g: example@mail.com"></div>
+				</div>
+				
+				<div class="form-group">
+					<div class="form-label">Description</div>
+					<div class="form-input"><textarea name="description" id="description" row="10"></textarea> </div>
+				</div>
+				
+				<div class="form-group">
+					<div class="form-label">Hobby</div>
+					<div class="form-input">
+						<strong>:</strong> 
+						<input type="checkbox" name="playing" id="playing">
+						<label for="playing"> Playing </label>  
+						<input type="checkbox" name="singing" id="singing"> 
+						<label for="singing"> Singing </label>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-label">Gender</div>
+					<div class="form-input">
+						<strong>:</strong> 
+						<input type="radio" name="gender" id="male">
+						<label for="male"> Male </label>  
+						<input type="radio" name="gender" id="female"> 
+						<label for="female"> Female </label> 
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-label">Country</div>
+					<div class="form-input">
+						<strong>:</strong> 
+						<select name="country">
+							<option value="">--select country-- </option>
+							<option value="Bangladesh">Bangladesh </option>
+							<option value="India">India </option>
+							<option value="Pakistan">Pakistan </option>
+						</select>   
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<button type="submit">Submit </button>
+					<a href="http://google.com"> Click here for details </a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

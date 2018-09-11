@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>box </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width-device-width" initial-scale="1"/>
+		<style>
+			#main {
+				max-width: 600px;
+				margin: 0 auto; 
+			}
+			.simple {
+				width: 500px;
+				margin: 20px auto;
+				border: 1px solid #333;
+			}
+			.fancy {
+				width: 500px;
+				margin: 20px auto;
+				padding: 50px;
+				border: 1px solid #333;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			Using max-width instead of width in this situation will improve the browser's handling of small windows. This is important when making a site usable on mobile. Resize this page to check it out!
+			By the way, max-width is supported by all major browsers including IE7+ so you shouldn't be afraid of using it.
+		</div> 
+		<div class="simple">
+			I'm smaller...
+		</div> 
+		
+		<div class="fancy">
+			And I'm bigger! 
+		</div> 
+		
+		
+	</body>
+</html>

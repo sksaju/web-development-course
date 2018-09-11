@@ -1,0 +1,93 @@
+
+
+<!doctype html>
+<html>
+    <head>
+        <title>position 2</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width-device-width" initial-scale="1"/>
+        <style>
+            .container {
+				position: relative;
+				min-height: 600px;
+            }
+            nav {
+				position: absolute;
+				left: 0px;
+				width: 200px;
+            }
+            section {
+				/* position is static by default */
+				margin-left: 210px;
+            }
+            footer {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				height: 70px;
+				background-color: white;
+				width: 100%;
+				text-align: center;
+            }
+            body {
+				margin: 80px;
+            }
+			.red {
+				border: 3px solid red;
+			}
+			.green {
+				border: 3px solid green;
+			}
+			.orange {
+				border: 3px solid orange;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="red">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Taco Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">Draft List</a>
+                    </li>
+                    <li>
+                        <a href="#">Hours</a>
+                    </li>
+                    <li>
+                        <a href="#">Directions</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="green">
+                <p>
+                    The <code>margin-left</code> style for <code>section</code>s makes sure there is room for the <code>nav</code>. Otherwise the absolute and static elements would overlap
+                </p>
+            </section>
+            <section class="orange">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+                </p>
+            </section>
+            <section class="green">
+                <p>
+                    Notice what happens when you resize your browser. It works nicely!
+                </p>
+            </section>
+            <footer class="orange">
+                <p>
+                    If you use a fixed header or footer, make sure there is room for it! I put a <code>margin-bottom</code> on the <code>body</code>.
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
+

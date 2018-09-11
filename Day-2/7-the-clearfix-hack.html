@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title>the clearfix hack</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width-device-width" initial-scale="1"/>
+		<style>
+			h2 {
+				margin-bottom: 5px;
+			}
+			.heading {
+				margin: 20px auto;
+				max-width: 600px;
+			}
+			.box {
+				margin: 20px auto;
+				padding:10px;
+				max-width: 600px;
+				border: 3px solid green;
+			}
+			img {
+				float: right;
+			}
+			.clear {
+				height:200px;
+			}
+			.clearfix {
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="heading">
+			<h2>the clearfix hack</h2>
+			<p>Here is a weird, bad thing that can sometimes happen when using floats:</p>
+		</div>
+		<div class="box">
+			<img src="images/ilta.png" alt="An Image">
+			<p>
+			  Uh oh... this image is taller than the element containing it, and it's floated, so it's overflowing outside of its container!
+			</p>
+		</div>
+		<div class="clear"> </div>
+		<div class="box clearfix">
+			<img src="images/ilta.png" alt="An Image">
+			<p>
+			  Uh oh... this image is taller than the element containing it, and it's floated, so it's overflowing outside of its container!
+			</p>
+		</div>
+	</body>
+</html>

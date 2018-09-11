@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Registration form</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width-device-width" initial-scale="1"/>
+	</head>
+	
+	<style>
+		.green {
+			color: green !important;
+		}
+		#red {
+			color: red;
+		}
+		p {
+			color: black;
+		}
+	</style>
+	
+	<body>
+	
+		<h1 title="Registration Form:" class="green">Registration Form:</h1>
+		<h1 title="Registration Form:" id="red" class="green">Registration Form 2:</h1>
+		
+		<form>
+			<p title="Type your name here">Student name:  <input type="text" name="student_name" id="student_name"></p> 
+			<p>Student email:  <input type="email" name="student_email" id="student_email"></p> 
+			<p>Description:  <textarea name="description" id="description" row="10"></textarea> </p> 
+			<p>Hobby:  
+				<input type="checkbox" name="playing" id="playing">
+				<label for="playing"> Playing </label>  
+				<input type="checkbox" name="singing" id="singing"> 
+				<label for="singing"> Singing </label> 
+			</p> 
+			<p>Gender:  
+				<input type="radio" name="gender" id="male">
+				<label for="male"> Male </label>  
+				<input type="radio" name="gender" id="female"> 
+				<label for="female"> Female </label> 
+			</p> 
+			<p>Country: 
+				<select name="country">
+					<option value="">--select country-- </option>
+					<option value="Bangladesh">Bangladesh </option>
+					<option value="India">India </option>
+					<option value="Pakistan">Pakistan </option>
+				</select>   
+			</p>  
+					
+			<hr>
+			<button type="submit">Submit </button>
+			<a href="http://google.com"> Click here for details </a>
+		</form>
+		
+	</body>
+</html>
