@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+
+</head>
+<body>
+	<p>
+		<button id="myButton" onclick="alert('Hello World')"> Click me!
+		</button>
+
+		<select onchange="alert('Hi Daffodil')">
+			<option>---select--- </option>
+			<option>Pizza </option>
+			<option>Burger </option>
+			<option>Coffee </option>
+		</select>
+	</p>
+
+	<p id="myText">Hello World </p>
+	<hr>
+	<p id="changeText">I like javascript!</p>
+	<p> <button id="changeButton"> Change Text </button></p>
+	<hr>
+	<p id="createText"></p>
+	<p>
+		 <button id="createButton"> Create Text </button>
+	</p>
+
+	<hr>
+	<p id="someText">Some text here......!</p>
+	<p>
+		 <button id="styleButton"> Change style </button>
+	</p>
+
+
+
+<script type="text/javascript">
+
+	document.getElementById("myText").innerHTML = "Hello Daffodil";
+
+	document.getElementById("changeButton").onclick = function() {
+		document.getElementById("changeText").innerHTML = "<h1> I love Javascript </h1>";
+	}
+
+	document.getElementById("createButton").onclick = function() {
+		document.getElementById("createText").innerHTML = "<h1> Happy Friday! </h1>";
+	}
+
+	document.getElementById("styleButton").onclick = function() {
+		document.getElementById("someText").style.fontSize = "36px";
+		document.getElementById("someText").style.color = "green";
+	}
+	
+
+
+</script>
+
+</body>
+</html>
