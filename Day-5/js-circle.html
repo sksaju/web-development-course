@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery</title>
+
+	<style type="text/css">
+		.circle {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			float: left;
+			margin-right: 50px;
+			margin-bottom: 50px;
+		}
+
+		#red-circle {
+			background-color: red;
+		}
+		#blue-circle {
+			background-color: blue;
+		}
+		#yellow-circle {
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="circle" id="red-circle"></div>
+	<div class="circle" id="blue-circle"></div>
+	<div class="circle" id="yellow-circle"></div>
+
+	<!--
+	<div style="clear: both;">
+		<button class="show-cricle" data="red-circle">Show red circle</button>
+		<button class="show-cricle" data="blue-circle">Show blue circle</button>
+		<button class="show-cricle" data="yellow-circle">Show yellow circle</button>
+	</div>
+	-->
+	<div style="clear: both;">
+		<button class="toogle-button" data="red-circle"><span>Hide</span> red circle</button>
+		<button class="toogle-button" data="blue-circle"><span>Hide</span> blue circle</button>
+		<button class="toogle-button" data="yellow-circle"><span>Hide</span> yellow circle</button>
+	</div>
+
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+
+	/*$("#red-circle").click( function() {
+		$("#red-circle").fadeOut("slow");
+	})*/
+
+	/*$(".circle").click( function() {
+		$(this).fadeOut("slow");
+	})
+
+	$(".show-cricle").click( function() {
+		var circle_id = $(this).attr("data");
+		$("#"+circle_id).fadeIn("slow");
+	})*/
+
+
+	$(".toogle-button").click( function() {
+
+		var circle_id = $(this).attr("data");
+		var circle = $("#"+circle_id);
+		if(circle.css("display") =="none") {
+			$("#"+circle_id).fadeIn("slow", function() {
+				$("button[data="+circle_id+"]").children('span').html("Hide");
+			});
+		} else {
+			$("#"+circle_id).fadeOut("slow", function() {
+				$("button[data="+circle_id+"]").children('span').html("Show");
+			});
+		}
+	});
+
+
+
+
+</script>
+
+</body>
+</html>

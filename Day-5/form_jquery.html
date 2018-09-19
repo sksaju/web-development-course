@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery</title>
+</head>
+<body>
+
+<form>
+	<p>Student Name: <input type="text" id="input_stud_name" name="student_name"></p>
+	<p>Student ID: <input type="text" id="input_stud_id" name="student_id"></p>
+	<p><button type="button" id="submit_btn">Submit</button></p>
+</form>
+	<!-- Hidden div -->
+	<div class="student_info" style="margin-top: 20px; display: none;">
+		<p>Student Name is <span id="studnet_name"></span></p>
+		<p>Student ID is <span id="student_id"></span></p>
+	</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript">
+	/* if(typeof jQuery == "undefined") {
+		alert("jQuery is not installd");
+	} else {
+		alert("jQuery is installd correctly");
+	} */
+
+	$("#submit_btn").click(function() {
+		var student_name = $("#input_stud_name").val();
+		var student_id = $("#input_stud_id").val();
+		$("#studnet_name").html(student_name);
+		$("#student_id").html(student_id);
+
+		$("div").css('display', 'block');
+	});
+
+
+
+	
+
+</script>
+
+</body>
+</html>
