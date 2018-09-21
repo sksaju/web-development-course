@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>jQuery regular expression</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div style="width: 600px; margin: 50px auto;">
+			
+
+		<button type="button" class="btn btn-success" id="get_button">Get ajax content</button>
+		<div id="ajax_content">
+			
+		</div>
+
+
+	</div>
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript">
+
+
+$("#get_button").click( function(e) {
+	$.ajax({
+		url: 'ajax_data/info.txt',
+		type: 'GET',
+		dataType: 'html',
+		success: function(data) {
+			$("#ajax_content").html(data);
+		},
+		error: function(data) {
+			alert('Something went wrong!');
+		}
+	});
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>
