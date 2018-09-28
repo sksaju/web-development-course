@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>Bootstap Practice</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+     $("#myCarousel").carousel({
+         interval : 3000,
+         pause: false
+	});
+});
+</script>
+
+</head>
+<body>
+	<div class="container" id="main">  
+		<div class="navbar navbar-default navbar-fixed-top">
+        	<div class="container">
+            	<!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"> 
+                                <a href="#"> Home </a>
+                            </li>
+                            <li class="dropdown"> 
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Services <strong class="caret"> </strong> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"> Web Design </a></li>
+                                    <li><a href="#"> Web Development </a></li>
+                                    <li><a href="#"> SEO </a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header"> More Services</li>
+                                    <li><a href="#"> Content Creating </a></li>
+                                    <li><a href="#"> E-mail Marketing </a></li>
+                                </ul>
+                            </li> <!---- end dropdown menu --->
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+							<input type="text" class="form-control" placeholder="Search">
+                         	<button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-search"> </span></button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown"> 
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" > <span class="glyphicon glyphicon-user"> </span> My Account <strong class="caret"> </strong></a>
+                                <ul class="dropdown-menu">
+                                    <li> <a href="#"> <span class="glyphicon glyphicon-wrench"> </span>  Settings </a> </li>
+                                    <li> <a href="#"> <span class="glyphicon glyphicon-edit"> </span>  Update info </a> </li>
+                                    <li class="divider"> </li>
+                                    <li> <a href="#"> <span class="glyphicon glyphicon-off"> </span>  Sign out </a> </li>
+                                </ul>
+                            </li>
+                       </ul>
+            		</div> <!---- end navbar collapse --->
+        		</div> <!--- end container---->
+		</div> <!----- end navbar----->
+        
+        
+        
+        <div id="myCarousel"  class="carousel slide" data-ride="carousel">
+        	<!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+        	<!-- Wrapper for slides -->
+        	<div class="carousel-inner">
+            	<div class="item active">
+                	<img src="images/img1.jpg" alt="Apple iPhone 5S">
+                	<div class="carousel-caption">
+                        <h3>Apple iPhone 5S</h3>
+                        <p>The iPhone 5s isn't a radical departure from its predecessor in body (unless you count a new gold color), but under the hood are a number of changes that give Apple's newest flagship some real firepower, with the best still yet to come. </p>
+                    </div> <!----- end carousel-caption ----->
+                </div> <!---- end item ---->
+                
+                <div class="item">
+                	<img src="images/img2.jpg" alt="Samsung Galaxy Note 3">
+                	<div class="carousel-caption">
+                        <h3>Samsung Galaxy Note 3</h3>
+                        <p>Similar to the updates Samsung made to the Galaxy S4, the new Note 3 features a bigger display while remaining very similar in size to the Note II; the biggest change in the Note 3 is the refinement of the S Pen and its accompanying software </p>
+                    </div> <!----- end carousel-caption ----->
+                </div> <!---- end item ---->
+                
+                <div class="item">
+                	<img src="images/img3.jpg" alt="Sony Xperia Z1">
+                	<div class="carousel-caption">
+                        <h3>Sony Xperia Z1 </h3>
+                        <p>Sony's got a plan and it's sticking to it - while other makers pile software feature upon feature, the Japanese focus on their historical strengths, such as beautiful, durable design, photographic excellence and enviable display tech. That in short is what the Xperia Z1 is all about. </p>
+                    </div> <!----- end carousel-caption ----->
+                </div> <!---- end item ---->
+                
+            </div> <!---- end carousel-inner ----->
+            
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            	<span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+           		<span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div> <!----- end carousel ----->
+        
+        
+        
+        
+        <div class="row" id="bigCallout" >
+        	<div class="col-sm-12">
+            	
+                <div class="alert alert-success alert-block fade in" id="successAlert"> 
+                	<button type="button" class="close" data-dismiss="alert">&times; </button> 
+                    <h4>Success! </h4>
+                    <p> You just made this element by using jQuery. Click the "x" in the top right corner to close this bad boy </p>
+                </div> <!----- end alert ------>
+                
+                <!----- Visible only on xs devices ------>
+            	<div class="well well-sm visible-xs"> 
+                <a href="#" class="btn btn-lg btn-block btn-default"> <span class="glyphicon glyphicon-phone"> </span> Give us a call </a>
+                </div> <!------ end well small--------> 
+            
+            	<div class="well">
+                	<div class="page-header">
+                    	<h1> A Fancy Header <small> A subheader for extra awesome. </small> </h1> 
+                    </div> <!----- end page-header ----->
+                    <p class="lead">Its had resolving otherwise she contented therefore. Afford relied warmth out sir hearts sister use garden. Men day warmth formed admire former simple. Humanity declared vicinity continue supplied no an.</p>
+                    <a href="" class="btn btn-lg btn-info" id="alertMe"> Click a nice big button </a>
+                    <a href="" class="btn btn-lg btn-link"> Or click a Link</a>
+                </div> <!----- end well ------>
+            </div> <!---- end Col-lg-12---->
+        </div> <!--- end bigCallout----->
+        
+        
+        
+        <div class="row" id="featuresHeading">
+        	<div class="col-lg-12">
+            	<h2> More Features </h2>
+            	<p>It as announcing it me stimulated frequently continuing. Least their she you now above going stand forth. He pretty future afraid should genius spirit on. Set property addition building put likewise get. Of will at sell well at as. Too want but tall nay like old. </p>
+        	</div> <!---- end col-12 ------->
+        </div> <!--- end featuresHeading----->
+        
+        <div class="row" id="features">
+        
+        	<div class="col-sm-4">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">
+                    	<h3 class="panel-title">Murkup with HTML5 </h3>
+                    </div> <!------- end panel-heading ------->
+                    <div class="panel-body">
+                        <img src="images/html5.jpg" alt="HTML5" class="img-circle">
+                        <p>Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire.  </p>
+                        <a href="" class="btn btn-warning btn-block">Learn to code HTML5 </a>
+                    </div> <!----- end panel-body ------->
+                </div> <!---- end panel ----->
+            </div> <!------ end col-sm-4 ------>
+            
+            <div class="col-sm-4">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">
+                    	<h3 class="panel-title">Style with CSS3 </h3>
+                    </div> <!------- end panel-heading ------->
+                    <div class="panel-body">
+                        <img src="images/css3.jpg" alt="CSS3" class="img-circle">
+                        <p>Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire.  </p>
+                        <a href="" class="btn btn-danger btn-block">Style it up with CSS3 </a>
+                    </div> <!----- end panel-body ------->
+                </div> <!---- end panel ----->
+            </div> <!------ end col-sm-4 ------>
+            
+            <div class="col-sm-4">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">
+                    	<h3 class="panel-title">Framework with Bootstrap 3 </h3>
+                    </div> <!------- end panel-heading ------->
+                    <div class="panel-body">
+                        <img src="images/bootstrap3.jpg" alt="Bootstrap 3" class="img-circle">
+                        <p>Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire.  </p>
+                        <a href="" class="btn btn-info btn-block">More Bootstrap</a>
+                    </div> <!----- end panel-body ------->
+                </div> <!---- end panel ----->
+            </div> <!------ end col-sm-4 ------>
+            
+        </div>  <!--- end features----->
+        
+        
+        <div class="row" id="moreInfo"> 
+        	<div class="col-sm-6">
+            	<h3>Neat Tabbable Content </h3>
+            	<div class="tabbable">
+                	<ul class="nav nav-tabs">
+                    	<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a> </li> 
+                    	<li><a href="#tab2" data-toggle="tab">Section 2</a> </li> 
+                	</ul>
+                    <div class="tab-content">
+                    	<div class="tab-pane active" id="tab1" >
+                        	<h4> <span class="glyphicon glyphicon-map-marker" > </span>Our Location <small>More like our favourite surf spot </small> </h4>	
+                            <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com.bd/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Maghbazar,+Dhaka,+Dhaka+Division&amp;aq=0&amp;oq=moghb&amp;sll=23.608602,90.350998&amp;sspn=11.982299,21.643066&amp;ie=UTF8&amp;hq=&amp;hnear=Maghbazar,+Ramna,+Dhaka,+Dhaka+Division&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=23.749357,90.408984&amp;output=embed"></iframe>
+                                                    
+                            <p>Compliment interested discretion estimating on stimulated apartments oh. Dear so sing when in find read of call. As distrusts behaviour abilities defective is. Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly. </p>
+                            <p>Compliment interested discretion estimating on stimulated apartments oh. Dear so sing when in find read of call. As distrusts behaviour abilities defective is. Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly. </p>
+                            <p>Compliment interested discretion estimating on stimulated apartments oh. Dear so sing when in find read of call. As distrusts behaviour abilities defective is. Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly. </p>
+                        </div> <!----- end tab-pane ----->
+                        
+                        <div class="tab-pane" id="tab2">
+                        	<h4> A Left Floated Picture <small>Using Placehold.it </small> </h4>
+                        	<img src="http://placehold.it/140" class="thumbnail pull-left">
+                            <p> Him boisterous invitation dispatched had connection inhabiting projection. By mutual an mr danger garret edward an. Diverted as strictly exertion addition no disposal by stanhill. This call wife do so sigh no gate felt. You and abode spite order get. Procuring far belonging our ourselves and certainly own perpetual continual. It elsewhere of sometimes or my certainty. Lain no as five or at high. Everything travelling set how law literature. </p>
+							<p> Now indulgence dissimilar for his thoroughly has terminated. Agreement offending commanded my an. Change wholly say why eldest period. Are projection put celebrated particular unreserved joy unsatiable its. In then dare good am rose bred or. On am in nearer square wanted. </p>
+                            <p>Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate add. She cordially behaviour can attempted estimable. Trees delay fancy noise manor do as an small. Felicity now law securing breeding likewise extended and. Roused either who favour why ham. </p>
+                            <hr>
+                            <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"> <span class="glyphicon glyphicon-hand-up"> </span>Click for a Modal Window!</a>
+                             <!-- start modal --> 
+                            <div class="modal fade" id="myModal">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title">A Modal Window</h4>
+                                  </div>
+                                  <!-- start modal-body -->  
+                                  <div class="modal-body">
+                                  	<h4> Text in a Modal </h4>
+                                    <p>Supported neglected met she therefore unwilling discovery remainder.</p>
+                                    <h4>Popovers in a Modal </h4>
+                                    <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You Clicked it!" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover </a>
+                                    <h4>Tooltip in a Modal </h4>
+                                   	<a href="#" data-original-title="Tooltip" rel="tooltip">This Link </a>should have a tooltip, and so should <a href="#" data-original-title="Woohoo" rel="tooltip">this one</a> 
+                                    <hr>
+                                    <p> <small>PS. This form does'n do anything. Just a heads up </small></p>
+                                    
+                                    <form class="form-horizontal" role="form">
+                                      <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+                                        <div class="col-sm-10">
+                                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="inputMessage" class="col-sm-2 control-label">Message</label>
+                                        <div class="col-sm-10">
+                                          <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"> </textarea>
+                                          <button type="submit" class="btn btn-success pull-right">Send! </button>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>  <!-- end modal-body -->                     
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                  </div>
+                                </div><!-- end modal-content -->
+                              </div><!-- end modal-dialog -->
+                            </div><!-- end modal -->             
+                        </div> <!----- end tab-pane ----->  
+                    </div> <!----- end tab-content ----->     
+                </div><!--- end tabbable----->
+            </div> <!----- end col-sm-6 ----->  
+            
+            <div class="col-sm-6">
+            	<h3>Some text info </h3>
+            	<p>Supported neglected met she therefore unwilling discovery remainder. Way sentiments two indulgence uncommonly own. Diminution to frequently sentiments he connection continuing indulgence. An my exquisite conveying up defective. Shameless see the tolerably how continued. She enable men twenty elinor points appear. Whose merry ten yet was men seven ought balls. </p>
+                <h4> A list group </h4>
+                
+                <div class="list-group">
+                	<a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Books</h4>
+                        <p>Style too own civil out along. Perfectly offending attempted add arranging age gentleman concluded. </p>
+                	</a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Carrots </h4>
+                        <p>An country demesne message it. Bachelor domestic extended doubtful as concerns at. Morning prudent removal an letters by. On could my in order never it.   </p>
+                	</a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Vicinity</h4>
+                        <p>As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built gay party world.  </p>
+                	</a>
+                </div> <!--- end list-group ---->
+                
+                <h4> A smaill heading </h4>
+                <p> So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward. Thrown any behind afford either the set depend one temper. Instrument melancholy in acceptance collecting frequently be if. Zealously now pronounce existence add you instantly say offending. Merry their far had widen was. Concerns no in expenses raillery formerly</p>
+                
+            </div> <!----- end col-sm-6 ----->  
+         </div>  <!--- end moreInfo----->
+        
+        <hr>
+        
+        <div class="row" id="moreCourses">
+        	<div class="col-sm-12">
+            	<h3> Learn more about web design </h3>
+            	<div class="row">
+                	<div class="col-sm-6">
+                    	<div class="thumbnail">
+                        <img src="images/web_hosting.jpg" >
+                        <div class="label label-success price"> <span class="glyphicon glyphicon-tag"> </span> <sup>$</sup>30</div>
+                            <div class="caption">
+                                <h3>Web Hosting 101 </h3>
+                                <p>Put all speaking her delicate recurred possible. Set indulgence inquietude discretion insensible bed why announcing. </p>
+                                <p> <a href="#" class="btn btn-sm btn-primary"> Take Coures </a><a href="#" class="btn btn-sm btn-link"> Learn more </a> </p>					</div> <!--- end caption ---->
+                    	</div> <!--- end thumbnail ---->
+                	</div> <!---- end col-sm-6 ---->
+                    
+                    <div class="col-sm-6">
+                    	<div class="thumbnail">
+                        <img src="images/psdtohtml.jpg" >
+                        <div class="label label-info price"> <span class="glyphicon glyphicon-tag"> </span>Free</div>
+                        	<div class="caption">
+                                <h3>PSD to HTML5 </h3>
+                                <p>Put all speaking her delicate recurred possible. Set indulgence inquietude discretion insensible bed why announcing. </p>
+                                <p> <a href="#" class="btn btn-sm btn-primary"> Take Coures </a> <a href="#" class="btn btn-sm btn-link"> Learn more </a>  </p>
+                            </div> <!--- end caption ---->
+                    	</div> <!--- end thumbnail ---->
+                	</div> <!---- end col-sm-6 ---->
+                </div> <!--- end row ---->         
+            </div> <!---- end col-sm-12 ----->   
+        </div>  <!--- end moreCourses----->     
+    </div> <!--- end container---->
+    
+    <footer>
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-2">
+             	   <h6> Coyright &copy; 2014 {name} </h6>
+            	</div> <!--- end col-sm-2 ---->
+                <div class="col-sm-4">
+             	   <h6> About Us </h6>
+                   <p>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr. </p>
+            	</div> <!--- end col-sm-2 ---->
+                <div class="col-sm-2">
+             	   <h6> Navigation </h6>
+                   <ul class="list-unstyled">
+                   		<li> <a href="#"> Home </a> </li>
+                        <li> <a href="#"> Services </a> </li>
+                        <li> <a href="#"> Links </a> </li>
+                        <li> <a href="#"> Contact </a> </li>
+                   </ul>
+            	</div> <!--- end col-sm-2 ---->
+                <div class="col-sm-2">
+             	   <h6> Follow Us </h6>
+                   <ul class="list-unstyled">
+                   		<li> <a href="#"> Twitter </a> </li>
+                        <li> <a href="#"> Facebook </a> </li>
+                        <li> <a href="#"> Google Plus </a> </li>
+                   </ul>
+            	</div> <!--- end col-sm-2 ---->
+                <div class="col-sm-2">
+             	   <h6> Coded with <span class="glyphicon glyphicon-heart"> </span> by Saju </h6>
+            	</div> <!--- end col-sm-2 ---->
+            </div> <!--- end row ---->
+        </div> <!--- end container ----
+    </footer> <!--- end footer ---->
+    
+</body>
+</html>
